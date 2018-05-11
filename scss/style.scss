@@ -1,0 +1,539 @@
+* {
+    // border: 1px solid #333;
+    font-family: 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Geneva, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+$blockcolor:#000;
+$gaycolor:#999;
+$cyan: #00bcd4;
+$yellow: #ffeb3b;
+$grey: #9e9e9e;
+$pink:#ef8ab4;
+.master-vision-phone {
+    display: none;
+}
+
+.visual {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 850px;
+    padding-top: 30px;
+
+    .jvgirl {
+
+        height: 600px;
+        margin: 0 -15px;
+
+
+
+        .girl-item {
+            width: 200px;
+        }
+
+        p {
+            color: $blockcolor;
+        }
+    }
+    .item-a {
+        margin-left: 40px;
+    }
+    .item-b {
+        margin-left: 20px;
+    }
+    .item-d {
+        margin-left: -20px;
+    }
+    .item-e {
+        margin-left: -70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*==============計時器=============*/
+
+.timeout {
+    margin: 50px 0 0 0;
+    .time {
+        span {
+            font-size: 8rem;
+            letter-spacing: 15px;
+            color: $blockcolor;
+        }
+    }
+
+    .hhmmss {
+        span {
+            font-size: 1.5rem;
+            letter-spacing: 10px;
+            color: $gaycolor;
+        }
+        .edit-hur {
+            margin: 0 8rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============排行榜=============*/
+
+.Leaderboard {
+    margin-bottom: 700px;
+
+    .Leaderboard-title {
+        margin: 100px 0;
+    }
+    a {
+        text-decoration: none;
+        color: $gaycolor;
+    }
+    .infor {
+        margin-bottom: 40px;
+        padding: 0 10%;
+        font-size: 2rem;
+        font-weight: 400;
+        span {
+            color: $pink;
+        }
+    }
+    .lt-cn {
+        font-size: 26px;
+        letter-spacing: 10px;
+        font-style: italic;
+    }
+    .lt-en {
+        font-size: 18px;
+        letter-spacing: 6px;
+        font-style: italic;
+        color: $gaycolor;
+    }
+    .jvid-css {
+        margin: 15px 0;
+        padding: 0;
+    }
+    .love-frame {
+        width: 184px;
+        height: 95px;
+        background-image: url(../img/lovebox.png);
+        background-size: cover;
+
+        .fa-heart {
+            color: $pink;
+        }
+        span {
+
+
+            font-size: 30px;
+            font-weight: 900;
+            color: #666;
+            line-height: 70px;
+        }
+    }
+    h4 {
+        letter-spacing: 10px;
+        font-style: italic;
+    }
+
+    .jvid-down {
+        margin-top: 130px;
+    }
+    .thumbnail {
+        border: 0;
+
+        ul {
+            li {
+                display: inline;
+                margin: 5px 10px;
+                font-size: 18px;
+                img {
+                    padding: 0 5px 0 0;
+                }
+                a:hover {
+                    transition: all 0.5s linear;
+                    color: #f24;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/*==============活動內容=============*/
+
+.activities {
+    height: 500px;
+    font-size: 20px;
+    position: relative;
+
+
+    input[type=checkbox],
+    input[type=radio] {
+        margin: 4px 1px 0;
+    }
+
+    .tab-content {
+
+        padding: 0px 20px;
+
+        ul {
+            list-style: none;
+
+
+            li {
+                margin: 6px 0;
+            }
+        }
+    }
+    .title {
+        font-size: 20px;
+        background-color: #ef8ab4;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        color: #fff;
+        letter-spacing: 12px;
+        font-style: italic;
+    }
+    h1 {
+        background-color: #ef8ab4;
+        color: #fff;
+        font-size: 20px;
+        padding: 20px 0;
+        text-align: center;
+        letter-spacing: 12px;
+
+        font-weight: 100;
+    }
+
+
+    $num-of-tabs: 3;
+
+    @mixin tabs {
+        @for $i from 1 through $num-of-tabs {
+            &:nth-of-type(#{$i}) {
+                &:checked {
+                    ~.slide {
+                        left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-wrap {
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+
+
+    input[type="radio"][name="tabs"] {
+        position: absolute;
+        z-index: -2;
+
+        &:checked {
+            +.tab-label-content {
+                label {
+                    color: $gaycolor;
+                }
+                .tab-content {
+                    display: block;
+                }
+            }
+        }
+        @include tabs;
+        &:first-of-type {
+            &:checked {
+                ~.slide {
+                    left: 10;
+                }
+            }
+        }
+    }
+
+    label {
+
+        cursor: pointer;
+        color: $gaycolor;
+        background-color: #fff;
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 56px;
+        transition: color 0.2s ease;
+        width: 100%;
+        border-bottom: solid 1px;
+    }
+
+    .slide {
+        background: $blockcolor;
+        width: calc(100% / #{$num-of-tabs});
+        height: 6px;
+        position: absolute;
+        left: 0;
+        top: calc(100% - 8px);
+        transition: left 0.3s ease-out;
+    }
+
+    .tab-label-content {
+        width: 100%;
+        .tab-content {
+            height: 500px;
+            overflow: scroll;
+            overflow-x: hidden;
+            position: absolute;
+            width: 100%;
+            top: 100px;
+            left: 0px;
+            line-height: 130%;
+            display: none;
+
+            p {
+                padding: 10px 36px;
+                letter-spacing: 5px;
+                line-height: 35px;
+                text-align: justify;
+            }
+        }
+    } //---------------------------------------------
+    .follow {
+        width: 42px;
+        height: 42px;
+        border-radius: 50px;
+        background: #03A9F4;
+        display: block;
+        margin: 300px auto 0;
+        white-space: nowrap;
+        padding: 13px;
+        box-sizing: border-box;
+        color: white;
+        transition: all 0.2s ease;
+        font-family: Roboto, sans-serif;
+        text-decoration: none;
+        box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+        i {
+            margin-right: 20px;
+            transition: margin-right 0.2s ease;
+        }
+        &:hover {
+            width: 204px;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    padding-top: 200px;
+    margin-bottom: 50px;
+    .copyright {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .language_left {
+            float: left;
+
+            padding-right: 2rem;
+        }
+    }
+}
+
+$break-ipad: 1023px;
+$break-phone: 767px;
+$break-pc: 1024px;
+
+@media screen and (max-width: $break-pc) {
+    .Leaderboard {
+        margin-bottom: 500px;
+        .Leaderboard-title {
+            margin: 4rem 0 1rem 0;
+        }
+        .thumbnail {
+            ul {
+                li {
+                    margin: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .love-frame {
+            width: 100%;
+            height: auto;
+            background-image: url(../img/lovebox.png);
+            background-size: cover;
+
+            img {
+                width: 20%;
+            }
+        }
+    }
+    .activities {
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: $break-phone) and (max-width: $break-ipad) {
+    .Leaderboard {
+        margin-bottom: 100px;
+        .Leaderboard-title {
+            margin: 4rem 0 1rem 0;
+        }
+        .infor {
+            margin-top: 100px;
+        }
+        .thumbnail {
+            ul {
+                li {
+                    margin: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .love-frame {
+            width: 100%;
+            height: 100px;
+            background-image: url(../img/loveboxStraight.png);
+            background-size: cover;
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .activities {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: $break-phone) {
+
+
+    .visual {
+
+        padding-top: 0;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        .master-vision {
+            display: none;
+        }
+        .logo {
+            display: none;
+        }
+        .master-vision-phone {
+
+            display: block;
+
+            .jvid {
+                padding: 0;
+            }
+        }
+    }
+
+    .timeout {
+        .time {
+            span {
+                font-size: 4rem;
+            }
+        }
+        .hhmmss {
+            span {
+                font-size: 1rem;
+                margin: 0px;
+            }
+            .edit-hur {
+                margin: 0 4rem;
+            }
+        }
+    }
+    .Leaderboard {
+        height: 2800px;
+        .Leaderboard-title {
+            margin: 4rem 0 1rem 0;
+        }
+        .jvid-down {
+            margin-top: 0;
+        }
+        .love-frame {
+            width: 184px;
+            height: 95px;
+            background-image: url(../img/lovebox.png);
+            padding: 18px 18px;
+
+            span {
+                font-size: 30px;
+                font-weight: 900;
+                color: #666;
+                line-height: 40px;
+            }
+        }
+    }
+    .activities {
+        height: 700px;
+        h1 {
+            letter-spacing: 0.5rem;
+        }
+        ul {
+            margin: 0 20px 0 0;
+        }
+    }
+
+    footer .copyright {
+        width: 100%;
+        bottom: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta property="og:title" content="JV Girl">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="img/ogimages.jpg">
+    <meta property="og:site_name" content="JVID, JKF, JVID girl, 私密晚餐, 人氣票選, 影音, 投票, 捷克論壇">
+    <meta property="og:description" content="">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="description" content="JVID girl, 一對一私密晚餐, 張語昕,羽沫,黃艾比,沈七七,珍琳,人氣票選, 捷克論壇">
+    <title>JV Girl人氣大比拼</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/wow.js"></script>
+</head>
+
+<body>
+    <!--    =================================主視覺=================================== -->
+    <header>
+        <div class="visual">
+            <div class="container-fulid">
+                <div class="master-vision-phone wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="container-fulid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 jvid">
+                                <img src="img/phonevision.jpg" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="master-vision">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+                                <div class="jvgirl item-a wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="girl-item center-block">
+                                        <img src="img/girlA.png" width="200px" alt="">
+                                    </div>
+                                    <div class="girl-name item-a text-center">
+                                        <p>羽沫</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="jvgirl item-b wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="girl-item center-block">
+                                        <img src="img/girlB.png" width="200px" alt="">
+                                    </div>
+                                    <div class="girl-name item-b text-center">
+                                        <p>珍琳</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="jvgirl item-c wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="girl-item center-block">
+                                        <img src="img/girlC.png" width="200px" alt="">
+                                    </div>
+                                    <div class="girl-name item-c text-center">
+                                        <p>張語昕</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="jvgirl item-d wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="girl-item center-block">
+                                        <img src="img/girlE.png" width="200px" alt="">
+                                    </div>
+                                    <div class="girl-name item-d text-center">
+                                        <p>沈琪琪</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2">
+                                <div class="jvgirl item-e wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="girl-item center-block">
+                                        <img src="img/girlD.png" width="210px" alt="">
+                                    </div>
+                                    <div class="girl-name text-center">
+                                        <p>黃艾比</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="container">
+                    <div class="row">
+                        <div class="jvidlogo wow fadeInUp" data-wow-delay="0.5s">
+                            <img src="img/logo.png" alt="" class="center-block img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    ===============================計時器===================================== -->
+    <div class="timeout">
+        <div class="container">
+            <div class="row">
+                <div class="time text-center">
+                    <span id="hh" class="edit">00</span>
+                    <span class="sep">:</span>
+                    <span id="mm" class="edit">00</span>
+                    <span class="sep">:</span>
+                    <span id="ss" class="edit">00</span>
+                </div>
+                <div class="hhmmss text-center">
+                    <span id="hh" class="edit">DAY</span>
+                    <span class="sep"></span>
+                    <span id="mm" class="edit-hur">HUR</span>
+                    <span class="sep"></span>
+                    <span id="ss" class="edit">MIN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    ===============================排行榜===================================== -->
+    <div class="Leaderboard">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="Leaderboard-title text-center">
+                    <div class="lt-cn"><img src="img/icon.png" alt="">女神排行榜<img src="img/icon.png" alt=""></div>
+                    <div class="lt-en">Leaderboard</div>
+                </div>
+                <div class="infor text-center wow fadeInUp" data-wow-delay="0.2s">
+                    各位親愛的粉絲，JVID首次線上活動登場了！這是一場刺激的競賽，冠軍除了實際獎勵，並可成為 JKF 八月份雜誌封面女郎。
+                    <br><span>頭號粉絲更可在餐廳與「女神共享浪漫晚餐」，並可獲得貼心小禮物</span>，一起來玩吧！
+                </div>
+            </div>
+            <!-- =======排行榜1=======-->
+            <div class="col-xs-12 col-sm-2 col-sm-offset-1 text-center">
+                <h4>張雨昕</h4>
+                <!-- ＝＝＝＝＝愛心數量＝＝＝＝＝ -->
+                <div class="love-frame center-block">
+                    <i class="fas fa-heart fa-2x"></i><span> 00090</span>
+                </div>
+                <div class="thumbnail">
+                    <figure class="snip1566">
+                        <img src="img/girlC-r.jpg" alt="sq-sample14" />
+                        <figcaption>點擊看更多</figcaption>
+                        <a href="https://www.jvid.com/tokki520" target="_blank"></a>
+                    </figure>
+                    <div class="caption jvid-css">
+                        <ul class="list-unstyled">
+                            <li><img src="img/icon2.png" alt="獎勵icon"><a href="">獎勵</a></li>
+                            <li><img src="img/icon3.png" alt="獎勵icon"><a href="">私訊</a></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- =======排行榜2=======-->
+            <div class="col-xs-12 col-sm-2 text-center jvid-down">
+                <h4>黃艾比</h4>
+                <!-- ＝＝＝＝＝愛心數量＝＝＝＝＝ -->
+                <div class="love-frame center-block">
+                    <i class="fas fa-heart fa-2x"></i><span> 00090</span>
+                </div>
+                <div class="thumbnail">
+                    <figure class="snip1566">
+                        <img src="img/girlD-r.jpg" alt="sq-sample14" />
+                        <figcaption>點擊看更多</figcaption>
+                        <a href="https://www.jvid.com/Abb_520" target="_blank"></a>
+                    </figure>
+                    <div class="caption jvid-css">
+                        <ul class="list-unstyled">
+                            <li><img src="img/icon2.png" alt="獎勵icon"><a href="">獎勵</a></li>
+                            <li><img src="img/icon3.png" alt="獎勵icon"><a href="">私訊</a></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- =======排行榜3=======-->
+            <div class="col-xs-12 col-sm-2  text-center ">
+                <h4>沈琪琪</h4>
+                <!-- ＝＝＝＝＝愛心數量＝＝＝＝＝ -->
+                <div class="love-frame center-block">
+                    <i class="fas fa-heart fa-2x"></i><span> 00090</span>
+                </div>
+                <div class="thumbnail">
+                    <figure class="snip1566">
+                        <img src="img/girlE-r.jpg" alt="sq-sample14" />
+                        <figcaption>點擊看更多</figcaption>
+                        <a href="https://www.jvid.com/chi_7_7_" target="_blank"></a>
+                    </figure>
+                    <div class="caption jvid-css">
+                        <ul class="list-unstyled">
+                            <li><img src="img/icon2.png" alt="獎勵icon"><a href="">獎勵</a></li>
+                            <li><img src="img/icon3.png" alt="獎勵icon"><a href="">私訊</a></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- =======排行榜4=======-->
+            <div class="col-xs-12 col-sm-2  text-center jvid-down">
+                <h4>珍琳</h4>
+                <!-- ＝＝＝＝＝愛心數量＝＝＝＝＝ -->
+                <div class="love-frame center-block">
+                    <i class="fas fa-heart fa-2x"></i><span> 00090</span>
+                </div>
+                <div class="thumbnail">
+                    <figure class="snip1566">
+                        <img src="img/girlB-r.jpg" alt="sq-sample14" />
+                        <figcaption>點擊看更多</figcaption>
+                        <a href="https://www.jvid.com/jeannine_chen" target="_blank"></a>
+                    </figure>
+                    <div class="caption jvid-css">
+                        <ul class="list-unstyled">
+                            <li><img src="img/icon2.png" alt="獎勵icon"><a href="">獎勵</a></li>
+                            <li><img src="img/icon3.png" alt="獎勵icon"><a href="">私訊</a></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- =======排行榜5=======-->
+            <div class="col-xs-12 col-sm-2  text-center">
+                <h4>羽沫</h4>
+                <!-- ＝＝＝＝＝愛心數量＝＝＝＝＝ -->
+                <div class="love-frame center-block">
+                    <i class="fas fa-heart fa-2x"></i><span> 00090</span>
+                </div>
+                <div class="thumbnail">
+                    <figure class="snip1566">
+                        <img src="img/girlA-r.jpg" alt="sq-sample14" />
+                        <figcaption>點擊看更多</figcaption>
+                        <a href="https://www.jvid.com/a1398036082" target="_blank"></a>
+                    </figure>
+                    <div class="caption jvid-css">
+                        <ul class="list-unstyled">
+                            <li><img src="img/icon2.png" alt="獎勵icon"><a href="">獎勵</a></li>
+                            <li><img src="img/icon3.png" alt="獎勵icon"><a href="">私訊</a></li>
+                        </ul>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--    ===============================活動內容===================================== -->
+    <div class="activities">
+        <div class="container">
+            <div class="row">
+                <div class="tab-wrap">
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <div class="tab-label-content" id="tab1-content">
+                        <label for="tab1">活動方式</label>
+                        <div class="tab-content">
+                            <h1>活動時間</h1>
+                            <ul>
+                                <li>5/23（三）14:00 - 5/30（三）14:00，共 7 天</li>
+                            </ul>
+                            <h1>活動方式</h1>
+                            <ul>
+                                <li>1. 本次活動全程公開，五位參賽女神必須使出渾身解數，盡可能賺取活動愛心；活動結束時累積愛心最多者，獲選五月份JVID女神，盡顯榮耀。</li>
+                                <li>2. 活動過程中，粉絲可透過解鎖、私聊、贊助等方式，為心愛的女神集氣，讓她順利登上冠軍寶座。</li>
+                                <li>3. 粉絲解鎖影片、贊助女郎可以獲得鑽石，未來有特殊用途敬請期待。</li>
+                                <li>4. 活動期間內戰況全程公開，粉絲可直接在網站查詢參賽者的愛心數。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="radio" name="tabs" id="tab2">
+                    <div class="tab-label-content" id="tab2-content">
+                        <label for="tab2">活動獎勵</label>
+                        <div class="tab-content">
+                            <h1>參賽者獎勵</h1>
+                            <p>活動期間內，參賽者只要累積 130000 顆愛心，皆可贏取參賽獎勵！冠軍再由主辦單位加碼一萬元。此外，累積最多愛心的女郎，可獲得JKF八月份雜誌專訪及宣傳照拍攝，內頁約5~8 頁，搭配個人介紹和編輯提問。此份獎勵不得兌現！ 活動排名及個人表現，均以網站實際公佈為準。活動截止時，若未能達成所需的保底愛心數，則無法領取獎勵，最後獎項由主辦單位認定。</p>
+                            <h1>粉絲獎勵：JV Girl實體見面會</h1>
+                            <p>女神卯足全力參賽，頭號粉絲也能獲得獎勵！活動結束時，官方將依貢獻度，各選出一位頭號粉絲 (共五位)，與心儀女神進行愛的互動。你可享受浪漫晚餐，並獲得精緻又貼心的小禮物，全由JVID招待！ 活動結束時，主辦單位會即時聯絡得獎者，若得獎者連絡不到或不克出席，則獎勵順延給下一名。所有獎勵不得兌現。</p>
+                            <h1>JV Girl實體見面會內容</h1>
+                            <ul>
+                                <li>1. 五男五女，現場共有五張桌子，分開對坐</li>
+                                <li>2. 吃飯閒聊+自我介紹，雙方可自由互動</li>
+                                <li>3. 吃飯到一半，現場服務人員會幫五對男女倒好酒水，安排交杯酒</li>
+                                <li>4. 吃完甜點後，由女郎親自贈送精美禮物，最後送上甜蜜小遊戲，讓你和女神姿體互動</li>
+                                <li>5. 每位粉絲可獲得貼心禮物 + 拍立得兩張</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="radio" name="tabs" id="tab3">
+                    <div class="tab-label-content" id="tab3-content">
+                        <label for="tab3">活動備註</label>
+                        <div class="tab-content">
+                            <h1>活動注意事項</h1>
+                            <ul>
+                                <li>1.活動排名及個人表現，均以網站實際公佈為準。</li>
+                                <li>2.所有參賽者只允許以一個帳號參賽。</li>
+                                <li>3.活動截止時， 參賽者的獎項由主辦單位做最後認定。</li>
+                                <li>4.活動最終決定權由JVID官方認定。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    =================================底部資訊=================================== -->
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="col-xs-12 col-sm-5">
+                    <p class="copyright_statment" style="color:#c1c1c1;">JVID Thousands of content creators 100% verified.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <p class="copyright_statment" style="color:#c1c1c1;">Copyrights © 2018 All rights reserved.</p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <div class=" language_rwd language_left"><a href="https://www.jvid.com/privacypolicy">使用條款</a></div>
+                    <div class=" language_rwd"><a href="https://www.jvid.com/support">聯絡我們</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

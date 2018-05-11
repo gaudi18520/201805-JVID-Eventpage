@@ -1,0 +1,407 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Geneva, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.master-vision-phone {
+  display: none;
+}
+
+.visual {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 850px;
+  padding-top: 30px;
+}
+.visual .jvgirl {
+  height: 600px;
+  margin: 0 -15px;
+}
+.visual .jvgirl .girl-item {
+  width: 200px;
+}
+.visual .jvgirl p {
+  color: #000;
+}
+.visual .item-a {
+  margin-left: 40px;
+}
+.visual .item-b {
+  margin-left: 20px;
+}
+.visual .item-d {
+  margin-left: -20px;
+}
+.visual .item-e {
+  margin-left: -70px;
+}
+
+/*==============計時器=============*/
+.timeout {
+  margin: 50px 0 0 0;
+}
+.timeout .time span {
+  font-size: 8rem;
+  letter-spacing: 15px;
+  color: #000;
+}
+.timeout .hhmmss span {
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+  color: #999;
+}
+.timeout .hhmmss .edit-hur {
+  margin: 0 8rem;
+}
+
+/*==============排行榜=============*/
+.Leaderboard {
+  margin-bottom: 700px;
+}
+.Leaderboard .Leaderboard-title {
+  margin: 100px 0;
+}
+.Leaderboard a {
+  text-decoration: none;
+  color: #999;
+}
+.Leaderboard .infor {
+  margin-bottom: 40px;
+  padding: 0 10%;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.Leaderboard .infor span {
+  color: #ef8ab4;
+}
+.Leaderboard .lt-cn {
+  font-size: 26px;
+  letter-spacing: 10px;
+  font-style: italic;
+}
+.Leaderboard .lt-en {
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-style: italic;
+  color: #999;
+}
+.Leaderboard .jvid-css {
+  margin: 15px 0;
+  padding: 0;
+}
+.Leaderboard .love-frame {
+  width: 184px;
+  height: 95px;
+  background-image: url(../img/lovebox.png);
+  background-size: cover;
+}
+.Leaderboard .love-frame .fa-heart {
+  color: #ef8ab4;
+}
+.Leaderboard .love-frame span {
+  font-size: 30px;
+  font-weight: 900;
+  color: #666;
+  line-height: 70px;
+}
+.Leaderboard h4 {
+  letter-spacing: 10px;
+  font-style: italic;
+}
+.Leaderboard .jvid-down {
+  margin-top: 130px;
+}
+.Leaderboard .thumbnail {
+  border: 0;
+}
+.Leaderboard .thumbnail ul li {
+  display: inline;
+  margin: 5px 10px;
+  font-size: 18px;
+}
+.Leaderboard .thumbnail ul li img {
+  padding: 0 5px 0 0;
+}
+.Leaderboard .thumbnail ul li a:hover {
+  transition: all 0.5s linear;
+  color: #f24;
+}
+
+/*==============活動內容=============*/
+.activities {
+  height: 500px;
+  font-size: 20px;
+  position: relative;
+}
+.activities input[type=checkbox],
+.activities input[type=radio] {
+  margin: 4px 1px 0;
+}
+.activities .tab-content {
+  padding: 0px 20px;
+}
+.activities .tab-content ul {
+  list-style: none;
+}
+.activities .tab-content ul li {
+  margin: 6px 0;
+}
+.activities .title {
+  font-size: 20px;
+  background-color: #ef8ab4;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 12px;
+  font-style: italic;
+}
+.activities h1 {
+  background-color: #ef8ab4;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+  letter-spacing: 12px;
+  font-weight: 100;
+}
+.activities .tab-wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.activities input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -2;
+}
+.activities input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+  color: #999;
+}
+.activities input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
+  display: block;
+}
+.activities input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {
+  left: calc((100% / 3) * 0);
+}
+.activities input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {
+  left: calc((100% / 3) * 1);
+}
+.activities input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {
+  left: calc((100% / 3) * 2);
+}
+.activities input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+  left: 10;
+}
+.activities label {
+  cursor: pointer;
+  color: #999;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 56px;
+  transition: color 0.2s ease;
+  width: 100%;
+  border-bottom: solid 1px;
+}
+.activities .slide {
+  background: #000;
+  width: calc(100% / 3);
+  height: 6px;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 8px);
+  transition: left 0.3s ease-out;
+}
+.activities .tab-label-content {
+  width: 100%;
+}
+.activities .tab-label-content .tab-content {
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0px;
+  line-height: 130%;
+  display: none;
+}
+.activities .tab-label-content .tab-content p {
+  padding: 10px 36px;
+  letter-spacing: 5px;
+  line-height: 35px;
+  text-align: justify;
+}
+.activities .follow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  background: #03A9F4;
+  display: block;
+  margin: 300px auto 0;
+  white-space: nowrap;
+  padding: 13px;
+  box-sizing: border-box;
+  color: white;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.activities .follow i {
+  margin-right: 20px;
+  transition: margin-right 0.2s ease;
+}
+.activities .follow:hover {
+  width: 204px;
+}
+.activities .follow:hover i {
+  margin-right: 10px;
+}
+
+footer {
+  position: relative;
+  padding-top: 200px;
+  margin-bottom: 50px;
+}
+footer .copyright {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .copyright .language_left {
+  float: left;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .Leaderboard {
+    margin-bottom: 500px;
+  }
+  .Leaderboard .Leaderboard-title {
+    margin: 4rem 0 1rem 0;
+  }
+  .Leaderboard .thumbnail ul li {
+    margin: 0;
+    font-size: 15px;
+  }
+  .Leaderboard .love-frame {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/lovebox.png);
+    background-size: cover;
+  }
+  .Leaderboard .love-frame img {
+    width: 20%;
+  }
+
+  .activities {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Leaderboard {
+    margin-bottom: 100px;
+  }
+  .Leaderboard .Leaderboard-title {
+    margin: 4rem 0 1rem 0;
+  }
+  .Leaderboard .infor {
+    margin-top: 100px;
+  }
+  .Leaderboard .thumbnail ul li {
+    margin: 0;
+    font-size: 15px;
+  }
+  .Leaderboard .love-frame {
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/loveboxStraight.png);
+    background-size: cover;
+  }
+  .Leaderboard .love-frame img {
+    display: none;
+  }
+
+  .activities {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .visual {
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  .visual .master-vision {
+    display: none;
+  }
+  .visual .logo {
+    display: none;
+  }
+  .visual .master-vision-phone {
+    display: block;
+  }
+  .visual .master-vision-phone .jvid {
+    padding: 0;
+  }
+
+  .timeout .time span {
+    font-size: 4rem;
+  }
+  .timeout .hhmmss span {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .timeout .hhmmss .edit-hur {
+    margin: 0 4rem;
+  }
+
+  .Leaderboard {
+    height: 2800px;
+  }
+  .Leaderboard .Leaderboard-title {
+    margin: 4rem 0 1rem 0;
+  }
+  .Leaderboard .jvid-down {
+    margin-top: 0;
+  }
+  .Leaderboard .love-frame {
+    width: 184px;
+    height: 95px;
+    background-image: url(../img/lovebox.png);
+    padding: 18px 18px;
+  }
+  .Leaderboard .love-frame span {
+    font-size: 30px;
+    font-weight: 900;
+    color: #666;
+    line-height: 40px;
+  }
+
+  .activities {
+    height: 700px;
+  }
+  .activities h1 {
+    letter-spacing: 0.5rem;
+  }
+  .activities ul {
+    margin: 0 20px 0 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+    bottom: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
